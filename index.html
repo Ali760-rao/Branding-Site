@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Co.</title>
+    <link rel="stylesheet" href="Style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+VA+Guides&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav>
+
+
+        <!-- Navbar Links -->
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <!-- Dropdown Menu -->
+                <div class="dropdown-menu">
+                    <a href="#">Home Cleaing</a>
+                    <a href="#">Office Cleaning</a>
+                    <a href="#">Special Event</a>
+                </div>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Call to Action Button -->
+        <a href="#" class="book-now">Book Now</a>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Book In 60 Seconds.</h1>
+            <h2><span class="highlight">Fast And Easy.</span></h2>
+            <p>Save Time and Money With Online Booking and Flat Rate Pricing!</p>
+        </div>
+        <div class="hero-image">
+            <img src="Img/Group 1.png" alt="Cleaning Team">
+        </div>
+    </section>
+
+
+    <div class="custom-main-content-wrapper">
+        <div class="custom-form-container">
+            <h1 class="custom-form-heading">Book Your Cleaning Service Now</h1>
+            <p class="custom-form-sub-heading">
+                Let Us Know What We Can Do For You.
+            </p>
+            <div class="custom-divider"></div>
+            <div class="custom-service-wrapper">
+                <h2 class="section-heading-custom">Services</h2>
+                <div class="custom-form-group">
+                    <select id="serviceDropdown">
+                        <option value="Standard Clean">Standard Clean</option>
+                        <option value="Deep Clean">Deep Clean</option>
+                        <option value="Move in Out">Move-In/Move-Out</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="custom-divider"></div>
+            <div class="select-extra-wrapper">
+                <h2 class="section-heading-custom">Select Extras</h2>
+
+                <div class="extra-cat-wrapper" id="extra-cat-wrapper">
+                    <!-- Coming from js -->
+                </div>
+            </div>
+            <div class="custom-divider"></div>
+            <div class="custom-frequencey-wrapper">
+                <h2 class="section-heading-custom">Frequency</h2>
+                <!-- Replication Start -->
+                <div class="frequncies-wrapper" id="frequncies-wrapper">
+
+
+                </div>
+
+            </div>
+            <div class="custom-divider"></div>
+            <div class="what-needs-to-be-done-wrapper">
+                <h2 class="section-heading-custom">What Needs To Be Done?</h2>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 25%;">
+                        <div class="custom-form-group">
+                            <b>Bedroom</b>
+
+                            <select id="bedroomDropdown">
+                                <option>Bedroom</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div style="width: 25%;">
+                        <div class="custom-form-group">
+                            <b>Bathrooms</b>
+                            <select id="bathroomDropdown">
+                                <option>Bathrooms</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="width: 35%;">
+                        <div class="custom-form-group">
+                            <b>Sq Ft</b>
+                            <select id="sqFtDropdown">
+                                <option>500-1000 sq ft</option>
+                                <option>1000+ sq ft</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-divider" style="margin: 50px 0;"></div>
+            <!-- Contact Information Form -->
+            <div class="custom-info-container">
+                <div class="section-heading-custom">Contact Information</div>
+                <div class="custom-info-subtitle">Let us know how we can reach you.</div>
+                <form class="custom-info-form">
+                    <!-- First Name -->
+                    <input type="text" class="custom-info-input" placeholder="First Name..." />
+
+                    <!-- Last Name -->
+                    <input type="text" class="custom-info-input" placeholder="Last Name..." />
+
+                    <!-- Email -->
+                    <input type="email" class="custom-info-input custom-info-full-width" placeholder="Email..." />
+
+                    <!-- Phone Number -->
+                    <div class="custom-info-phone custom-info-full-width">
+                        <input type="text" class="custom-info-input" placeholder="Phone Number..." style="flex: 1;" />
+                    </div>
+
+                    <!-- Address -->
+                    <input type="text" class="custom-info-input" placeholder="Address..." />
+
+                    <!-- Apartment/Suite -->
+                    <input type="text" class="custom-info-input" placeholder="Apt/Suite..." />
+
+                    <!-- City -->
+                    <input type="text" class="custom-info-input" placeholder="City..." />
+
+                    <!-- State -->
+                    <input type="text" class="custom-info-input" placeholder="State..." />
+
+                    <!-- Zip Code -->
+                    <input type="text" class="custom-info-input" placeholder="Zip Code..." />
+                </form>
+
+            </div>
+            <div class="custom-divider"></div>
+            <div class="custom-discount-section">
+                <div class="custom-discount-label">Discount Code</div>
+                <div class="custom-discount-row">
+                    <input type="text" class="custom-discount-input" placeholder="Discount Code (Optional)..." />
+                    <button class="custom-apply-button">Apply</button>
+                </div>
+            </div>
+
+
+            <div class="custom-payment-details">
+                <h2>Payment Details</h2>
+                <p>Enter your card information below. Don't worry, you won't be charged until after service has been
+                    rendered.</p>
+                <div class="custom-card-input">
+                    <input type="text" placeholder="Card Number" />
+                    <button class="custom-autofill-button">Autofill link</button>
+                </div>
+                <div class="custom-card-icons">
+                    <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6fb63bc12795ee0fa.png"
+                        alt="MasterCard" />
+                    <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6109525f4285f0aee.png"
+                        alt="Visa" />
+                    <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6fb63bc36d65ee0f9.png"
+                        alt="Discover" />
+                    <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b66876bdfddbe1c88d.png"
+                        alt="American Express" />
+                </div>
+                <p class="custom-authorization">
+                    I authorize Maid Complete to charge my credit card above for agreed upon purchases. I understand
+                    that my information will be saved to file for further transactions on my account.
+                </p>
+            </div>
+
+            <div class="custom-additional-info">
+                <h2>Anything Else We Should Know?</h2>
+                <textarea placeholder="Please provide any special instructions here."></textarea>
+            </div>
+
+            <div class="custom-submit">
+                <button class="custom-book-now">Book Now</button>
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- Content Second Part -->
+
+        <div class="content-second-col">
+
+            <!-- How it works -->
+            <div class="custom-how-it-works">
+                <a href="https://www.youtube.com/" target="_blank">
+                <svg class="svg" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14.04" cy="14.04" r="13.54" stroke="#E06B64" />
+                    <path d="M23.5872 14.6016L10.1088 22.3833L10.1088 6.81984L23.5872 14.6016Z" fill="#E06B64" />
+                </svg>
+                <p>
+                    How It Work
+                </p>
+            </a>
+            </div>
+
+            <!-- Boking custom-summary -->
+
+            <div class="booking-custom-summary">
+                <div class="custom-summary-header">
+                    <div>
+                        <h3 class="booking-custom-summary-heading">
+                            Booking custom-summary
+                        </h3>
+                        <p>
+                            Powered by <a href="">Ahmad Ilyas</a>
+                        </p>
+                    </div>
+
+
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" stroke="black" stroke-width="2" />
+                        <path d="M5 10H15" stroke="black" stroke-width="2" />
+                    </svg>
+
+                </div>
+
+                <div class="custom-divider"></div>
+                <div class="details-container">
+                    <div class="details-row">
+                        <span class="label">Service</span>
+                        <span class="value" id="summaryService">Standard Clean</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="label">Frequency</span>
+                        <span class="value" id="summaryFrequency">Every 2 Weeks - 10%</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="label">Bedrooms</span>
+                        <span class="value" id="summaryBedrooms">4</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="label">Bathrooms</span>
+                        <span class="value" id="summaryBathrooms">5</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="label">Sq Ft</span>
+                        <span class="value" id="summarySqFt">500 - 1000 Sq Ft</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="label">Extras</span>
+                        <span class="value" id="summaryExtras">Inside Fridge</span>
+                    </div>
+                </div>
+
+                <div class="custom-divider"></div>
+
+                <div class="custom-calculation-container">
+                    <div class="custom-calculation-row">
+                        <span class="custom-calculation-label">Total Before Tax</span>
+                        <span class="custom-calculation-amount">$162.00</span>
+                    </div>
+                    <div class="custom-calculation-row custom-calculation-total">
+                        <span class="custom-calculation-label custom-calculation-bold">TOTAL</span>
+                        <span class="custom-calculation-amount custom-calculation-total-amount">$171.72</span>
+                    </div>
+                </div>
+
+
+                <div class="communication-container">
+                    <div class="icon">
+                        <img class="Graphics-img" src="Img/Graphics 1.png" alt="Icon">
+                    </div>
+                    <div class="title">Saves You Time</div>
+                    <div class="description">
+                        Maid Completely Helps You Live Smarter, Giving You Time To Focus On What's Most Important
+                    </div>
+                </div>
+
+                <div class="custom-divider"></div>
+
+
+
+                <div class="communication-container">
+                    <div class="icon">
+                        <img class="Graphics-img" src="Img/Graphics 2.png"
+                            alt="Icon">
+                    </div>
+                    <div class="title">Safety First</div>
+                    <div class="description">
+                       We Rigorously Vet All Of Our Cleaners, Who Undergo Identity And Background Checks
+                    </div>
+                </div>
+
+
+                <div class="custom-divider"></div>
+
+
+
+                <div class="communication-container">
+                    <div class="icon">
+                        <img class="Graphics-img" src="Img/Graphics 3.png"
+                            alt="Icon">
+                    </div>
+                    <div class="title">Only The Best Quality</div>
+                    <div class="description">
+                       Our Professional Cleaners Go Above And Beyond On Every Job
+                    </div>
+                </div>
+
+                <div class="custom-divider"></div>
+                <div class="communication-container">
+                    <div class="icon">
+                        <img class="Graphics-img" src="Img/Graphics 4.png"
+                            alt="Icon">
+                    </div>
+                    <div class="title">Easy To Get Help</div>
+                    <div class="description">
+                        Select The Number Of Bedrooms And Bathrooms
+                    </div>
+                </div>
+
+
+                <div class="custom-divider"></div>
+
+
+
+                <div class="communication-container">
+                    <div class="icon">
+                        <img class="Graphics-img" src="Img/Graphics 6.png"
+                            alt="Icon">
+                    </div>
+                    <div class="title">Seamless Communication</div>
+                    <div class="description">
+                        Call, Email Or Online Chat Us Anytime! Our Average Response Time Is Under 10 Minutes.
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Main Image custom-summary -->
+
+            <div class="main-side-image">
+                <img
+                    src="Img/Group 2.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="custom-contact-container">
+        <div class="custom-contact-map">
+            <!-- Embed Google Map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.0839449115037!2d73.13693587499334!3d29.601245889434203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393d97741c00e4a7%3A0xee8b223d29b9746!2sMian%20Town%20Haroonabad%2C%20Bahawalnagar%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1734515871846!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="custom-contact-info">
+            <div class="custom-contact-row">
+                <div class="custom-contact-item">
+                    <div class="custom-contact-icon">
+                        <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6fb63bc03b05ee0fb.png"
+                            alt="">
+                    </div>
+                    <p>help@CleaningCo.Com</p>
+                </div>
+                <div class="custom-contact-item">
+                    <div class="custom-contact-icon">
+                        <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6fb63bc30a85ee0fc.png"
+                            alt="">
+                    </div>
+                    <p>Street No.18 Mian Town, HND Bahawalnager</p>
+                </div>
+            </div>
+            <div class="custom-contact-row">
+                <div class="custom-contact-item">
+                    <div class="custom-contact-icon">
+                        <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6db465616e4faa43a.png"
+                            alt="">
+                    </div>
+                    <p>332-7288-157</p>
+                </div>
+                <div class="custom-contact-item">
+                    <div class="custom-contact-icon">
+                        <img src="https://storage.googleapis.com/msgsndr/RflhuwkKfRrZR8uAIcyk/media/675f38b6ea029a35b5a3dae7.png"
+                            alt="">
+                    </div>
+                    <p>24 Hours / 7 Days A Week</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section -->
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Content -->
+            <div class="footer-section about">
+                <h2>Let’s Work Together</h2>
+                <p>
+                    Our Team Of Experienced Maids Is Dedicated To Providing Top-Notch Cleaning Services For All Types Of
+                    Homes, Apartments, And Even Move In Or Out Cleaning. We Understand That Every Home Is Unique And Has
+                    Its Own Cleaning Needs, Which Is Why We Offer Customizable Cleaning Packages To Fit Your Specific
+                    Requirements. You Can Trust That Your Home Will Be In Good Hands.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Info -->
+            <div class="footer-section contact-info">
+                <h2>Company Info</h2>
+                <p>CleaningCo. Maids</p>
+                <p>Mian Town, HND</p>
+                <p>332-7288-157</p>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Customer – TOS</a> |
+                <a href="#">Service Provider – TOS</a>
+            </p>
+            <p>&copy; 2024 CleaningCo. All Rights Reserved.</p>
+            <h3 class="footer-end">Developed By Ahmad Ilyas</h3>
+        </div>
+
+    </footer>
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>
